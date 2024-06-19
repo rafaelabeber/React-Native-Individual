@@ -25,7 +25,7 @@ export function Home() {
 
         <Text style={styles.bodytext}>
           Adicione repositorios favoritos aqui para ter acesso rápido a qualquer momento,
-          sem ter
+          sem ter que pesquisar
 
         </Text>
 
