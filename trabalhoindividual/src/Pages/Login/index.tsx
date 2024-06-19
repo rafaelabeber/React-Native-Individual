@@ -34,6 +34,7 @@ export function Login() {
       <View style={styles.container}>
         <Text style={styles.title}>Bem Vindo(a)!</Text>
 
+
         <TextInputComponent
           recebendoFuncao={handleEmail}
           recebendoValue={email}

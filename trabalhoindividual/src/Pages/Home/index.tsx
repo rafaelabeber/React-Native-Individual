@@ -4,13 +4,16 @@ import {
   Image, Button, Alert, TouchableWithoutFeedback, Keyboard
 } from 'react-native'
 import { styles } from './style';
-import gatito from '../../Assets/gatito.gif'
+import github from '../../Assets/github.jpg'
 import { ButtonComponents } from '../../Components/ButtonComponent';
 
 export function Home() {
 
-  const mensagem = () => {
-    Alert.alert("Surpresa!")
+  const buscar = () => {
+    Alert.alert("Encontre suas coisas.")
+  }
+  const repositorio = () => {
+    Alert.alert("Repositório Criado com Sucesso")
   }
 
   return (
@@ -18,15 +21,18 @@ export function Home() {
       <View style={styles.container}>
         <Text style={styles.title}>Bem Vindo(a)!</Text>
 
-        <Image source={gatito} alt= "Gif de um Gato bem fofão" style={styles.gif}/>
+        <Image source={github}/>
 
         <Text style={styles.bodytext}>
-          Esse é o meu trabalho individual da disciplina de
-          ReactNative do Serratec!
+          Adicione repositorios favoritos aqui para ter acesso rápido a qualquer momento,
+          sem ter que pesquisar.
 
         </Text>
 
-        <ButtonComponents title="Aperte" recebendoFuncao ={mensagem}/>
+        <ButtonComponents title="Buscar GitHub" recebendoFuncao ={buscar}/>
+        <ButtonComponents title="Repositórios" recebendoFuncao ={repositorio}/>
+
+
 
 
 
