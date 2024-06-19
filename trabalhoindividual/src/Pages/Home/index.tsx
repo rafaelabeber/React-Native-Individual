@@ -21,11 +21,11 @@ export function Home() {
       <View style={styles.container}>
         <Text style={styles.title}>Bem Vindo(a)!</Text>
 
-        <Image source={github}/>
+        <Image source={github} style={styles.gif}/>
 
         <Text style={styles.bodytext}>
           Adicione repositorios favoritos aqui para ter acesso rápido a qualquer momento,
-          sem ter que pesquisar.
+          sem ter
 
         </Text>
 
